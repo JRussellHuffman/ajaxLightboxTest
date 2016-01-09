@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>main page</title>
+	<meta name=viewport content="width=device-width, initial-scale=1">
+	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="js/content.js"></script>
+	<script type="text/javascript">
+
+		$(document).ready(function() {
+			$("div.headContainer").load("header.html")
+		})
+
+	</script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<div class="headContainer"></div>
+	<div class="thumbContainer">
+		<!-- project dynamically added here -->
+	</div>
+	<div class="testSpacer"></div>
+
+	<div class="lightbox">
+		<div class="bg"></div>
+		<div class="fg" id="content">
+			<h1 class="pop">next</h1>
+			<p class="pop">next text</p>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/thumbHandler.js"></script>
+	<script type="text/javascript" src="js/function.js"></script>
+</body>
+</html>

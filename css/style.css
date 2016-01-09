@@ -1,0 +1,76 @@
+img {
+	max-width: 100%;
+}
+
+/* thumbs on main page */
+div.thumbContainer {
+	position: relative;
+	overflow: auto;
+}
+div.thumb {
+	position: relative;
+	margin:20px;
+	background: #aaf;
+	float: left;
+}
+
+div.standard {
+	width: 200px;
+	height: 200px;
+}
+
+img.thumb {
+	width: 100%;
+	height: 100%;
+}
+
+div.bg {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,.5);
+}
+
+div.fg {
+	position: fixed;
+	left: 50%;
+	top: 0;
+	width: 1000px;
+	margin-left: -500px;
+	height: 100%;
+	background: white;
+	overflow: scroll;
+	z-index: 2;
+}
+
+div.lightbox {
+	display: none;
+}
+
+div.header {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 35px;
+	color: white;
+	background: black;
+	text-align: center;
+	padding-top:15px;
+	z-index: 1;
+}
+
+div.headPadding {
+	position: relative;
+	height: 50px;
+}
+
+/* for increasing page length during testing */
+
+div.testSpacer {
+	width: 50px;
+	height: 1000px;
+	background:red;
+}
